@@ -2,11 +2,11 @@ const budget = parseInt(prompt("Cual es tu presupuesto inicial: "));
 let hosting = parseInt(prompt("Cual es el estimado del hospedaje: "));
 let transportation = parseInt(prompt("Cual es el estimado del transporte: "));
 let food = parseInt(prompt("Cual es el presupuesto de la comida: "));
-let n = parseInt(prompt("Deseas comprar un articulo?:\
-                        \n(1)Si\
-                        \n(2)No"));
 let result = budget - (hosting + transportation + food);
 alert("Con esas compras te quedaria: " + result);
+let n = parseInt(prompt("Deseas ingresar un articulo?:\
+                        \n(1)Si\
+                        \n(2)No"));
 const object = [];
 function constructora(nombreProducto, valorProducto) {
   return {
@@ -43,4 +43,4 @@ while (n == 1) {
   };
 };
 
-alert(object);
+console.log(object);
